@@ -17,7 +17,7 @@ require('header.php');
 			<td width="150"><b>DELETION</b></td>
 		</tr>
 		<?php
-		$data1 =  mysqli_query($samb,"SELECT * FROM room ORDER BY nomroom ASC");
+		$data1 = mysqli_query($samb,"SELECT * FROM room ORDER BY nomroom ASC");
 		$no=1;
 		while ($info1 = mysqli_fetch_array($data1)) {
 			$dataCat = mysqli_query($samb,"SELECT * FROM categories WHERE idcat='$info1[idcat]'");
