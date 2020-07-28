@@ -10,7 +10,7 @@ if (isset($_POST['renewid'])) {
 	$idtype = $_POST['renewid'];
 	echo "<script>alert('<?php echo $idtype; ?>');</script>";
 	//SAVE WITH THE NEW VALUE
-	$result = mysqli_query($samb,"UPDATE room SET idcat='2' WHERE idroom='$roomid' ");
+	$result = mysqli_query($samb,"UPDATE room SET idcat='idtype' WHERE idroom='$roomid' ");
 	echo "<script>alert('RECORD UPDATED'); window.location='room.php'</script>";
 }
 $IdRoom=$_GET['nomroom'];

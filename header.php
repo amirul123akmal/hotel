@@ -7,12 +7,6 @@
 <head>
 	<title> <?php echo $sysname;?> </title>
 </head>
-<style type="text/css">
-	a:link {color:#FF0000;}      /* unvisited link */
-	a:visited {color:#FFFAFA;}  /* visited link */
-	a:hover {color:#FFFAFA;}  /* mouse over link */
-	a:active {color:#FFFAFA;}
-</style>
 <body>
 		<table border="0" cellpadding="0" cellspacing="0" align="center">
 			<tr>
