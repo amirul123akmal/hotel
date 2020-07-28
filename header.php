@@ -13,7 +13,7 @@
 	.link{color: blue;}
 	.link:hover{color: red;}
 </style>
-<body>
+<body >
 		<table border="0" cellpadding="0" cellspacing="0" align="center">
 			<tr>
 				<td width="445" height="200" background="<?php echo $logo; ?>"></td>
