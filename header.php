@@ -7,6 +7,12 @@
 <head>
 	<title> <?php echo $sysname;?> </title>
 </head>
+<style type="text/css">
+	a{color: green;}
+	a:hover{color: red;}
+	.link{color: blue;}
+	.link:hover{color: red;}
+</style>
 <body>
 		<table border="0" cellpadding="0" cellspacing="0" align="center">
 			<tr>

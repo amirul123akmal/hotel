@@ -28,15 +28,13 @@ require('header.php');
 				<td> <?php echo $info1['name']; ?> </td>
 				<td> <?php echo $info1['idstaff']; ?> </td>
 				<td> <?php echo $info1['pass']; ?> </td>
-				<td><a href="staff_update.php?staffid=
-					<?php echo $info1['idstaff']; ?>">UPDATE</a></td>
+				<td><a href="staff_update.php?staffid=<?php echo $info1['idstaff']; ?>"><div class="link">UPDATE</div></a></td>
 				<td>
 				<?php
 				//HIDDEN DELETE LINK FOR ADMIN
 				if ($info1['levels']!="ADMIN") {
 					?>
-					<a href="staff_delete.php?staffid=
-					<?php echo $info1['idstaff']; ?>">DELETE</a>
+					<a href="staff_delete.php?staffid=<?php echo $info1['idstaff']; ?>"><div class="link">DELETE</div></a>
 					<?php
 				}
 				?>

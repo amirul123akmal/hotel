@@ -29,8 +29,8 @@ require('header.php');
 			<td> <?php echo $info1['nomroom']; ?></td>
 			<td> <?php echo $infoCat['category']; ?></td>
 			<td> RM <?php echo $infoCat['price']; ?></td>
-			<td><a href="room_update.php?nomroom=<?php echo $info1['nomroom']; ?>">UPDATE</a></td>
-			<td><a href="room_delete.php?roomid=<?php echo $info1['idroom']; ?>">DELETE</a></td>
+			<td><a href="room_update.php?nomroom=<?php echo $info1['nomroom']; ?>"><div class="link">UPDATE</div></a></td>
+			<td><a href="room_delete.php?roomid=<?php echo $info1['idroom']; ?>"><div class="link">DELETE</div></a></td>
 		</tr>
 		<?php $no++; } ?>
 	</table><br>

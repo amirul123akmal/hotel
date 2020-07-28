@@ -27,8 +27,8 @@ require 'header.php';
 				<td> <?php echo $no ;?></td>
 				<td> <?php echo $info1['category'] ;?></td>
 				<td> RM <?php echo $info1['price'] ;?></td>
-				<td align="center" ><a href="category_update.php?idcat= <?php echo $info1['idcat'];?>">UPDATE</a></td>
-				<td align="center" ><a href="category_delete.php?idcat=<?php echo $info1['idcat']; ?>">DELETE</a></td>
+				<td align="center" ><a href="category_update.php?idcat= <?php echo $info1['idcat'];?>"><div class="link">UPDATE</div></a></td>
+				<td align="center" ><a href="category_delete.php?idcat=<?php echo $info1['idcat']; ?>"><div class="link">DELETE</div></a></td>
 			</tr>
 			<?php $no++; }?>
 	</table><br><br>
