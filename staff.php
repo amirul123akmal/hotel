@@ -5,18 +5,20 @@ require('config.php');
 //RECALL HEADER FILE
 require('header.php');
 ?>
-
 <html>
+<style type="text/css">
+	b{color:<?php echo $keempat; ?>}
+</style>
 <center>
-	<h2> Staff List</h2>
+	<h2 style="color: <?php echo $keenam; ?>">Staff List</h2>
 	<table width="800" border="1" align="center">
 		<tr align="middle">
-			<td height="30">NO.</td>
-			<td>USERNAME</td>
-			<td>ID STAFF</td>
-			<td>PASSWORD</td>
-			<td>UPDATION</td>
-			<td>DELETION</td>
+			<td height="30"><b>NO.</b></td>
+			<td><b>USERNAME</b></td>
+			<td><b>ID STAFF</b></td>
+			<td><b>PASSWORD</b></td>
+			<td><b>UPDATION</b></td>
+			<td><b>DELETION</b></td>
 		</tr>
 		<?php
 		$data1 = mysqli_query($samb,"SELECT * FROM staff");
@@ -41,7 +43,6 @@ require('header.php');
 				</td>
 			</tr>
 			<?php $no++; } ?>
-		}
 	</table>
 	<a href="staff_add.php">[+] Register New Staff</a><br><br>
 	<a href="index2.php">Main Menu</a>

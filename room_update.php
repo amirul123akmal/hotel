@@ -28,17 +28,17 @@ $_SESSION['roomid'] = $roomid;
 <html>
 <center>
 	<body>
-		<h2>UPDATE ROOM & CATEGORY</h2>
+		<h2 style="color: <?php echo $keenam; ?>">UPDATE ROOM & CATEGORY</h2>
 		<form name="form1" action="room_update.php" method="POST">
 			<table width="600" border="0" align="center">
 				<tr>
-					<td width="200"><b>Room Number :</b></td>
+					<td width="200">ROOM NUMBER :</td>
 					<td>
 						<p><?php echo $_SESSION['original']; ?></p>
 					</td>
 				</tr>
 				<tr>
-					<td width="200">ROOM CATEGORY</td>
+					<td width="200">ROOM CATEGORY :</td>
 					<td><b>
 						<select name="renewid" id="renewid" >
 							<option value="<?php $res[idcat];?>"><?php echo $infoCat['category']; ?></option>

@@ -5,8 +5,11 @@ require('config.php');
 require('header.php');
 ?>
 <html>
+<style type="text/css">
+	b{color:<?php echo $keempat; ?>}
+</style>
 <center>
-	<h2> LIST OF ROOM</h2><br>
+	<h2 style="color: <?php echo $keenam; ?>"> LIST OF ROOM</h2><br>
 	<table width="811" border="1" align="center">
 		<tr align="center">
 			<td width="40"><b>NUM.</b></td>

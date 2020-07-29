@@ -12,7 +12,7 @@ require 'header.php';
 		<form name="searchForm" method="post" action="booking_start.php">
 			<table width="800" border="0" align="center" cellpadding="0">
 				<tr>
-					<td colspan="2" align="center"><h2>GUEST INFORMATION</h2></td>
+					<td colspan="2" align="center"><h2 style="color: <?php echo $keenam; ?>">GUEST INFORMATION</h2></td>
 				</tr>
 				<tr>
 					<td align="center">SEARCH IC NUMBER:</td>

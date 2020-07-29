@@ -6,10 +6,13 @@ require 'config.php';
 require 'header.php';
 
 ?>
+<style type="text/css">
+	b{color:<?php echo $keempat; ?>}
 
+</style>
 <html>
 <center>
-	<h2>CATEGORIES & PRICE</h2>
+	<h2 style="color: <?php echo $keenam; ?>">CATEGORIES & PRICE</h2>
 	<table width="700" border="1" align="center">
 		<tr align="center">
 			<td width="20"><b>NUM.</b></td>
@@ -27,7 +30,7 @@ require 'header.php';
 				<td> <?php echo $no ;?></td>
 				<td> <?php echo $info1['category'] ;?></td>
 				<td> RM <?php echo $info1['price'] ;?></td>
-				<td align="center" ><a href="category_update.php?idcat= <?php echo $info1['idcat'];?>"><div class="link">UPDATE</div></a></td>
+				<td align="center" ><a href="category_update.php?idcat=<?php echo $info1['idcat'];?>"><div class="link">UPDATE</div></a></td>
 				<td align="center" ><a href="category_delete.php?idcat=<?php echo $info1['idcat']; ?>"><div class="link">DELETE</div></a></td>
 			</tr>
 			<?php $no++; }?>

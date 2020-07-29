@@ -33,7 +33,7 @@ if (isset($_POST['update'])) {
 <html>
 <center>
 	<body>
-		<h2> UPDATE CATEGORY AND PRICE</h2>
+		<h2 style="color: <?php echo $keenam; ?>"> UPDATE CATEGORY AND PRICE</h2>
 		<form method="POST" enctype="multipart/form-data">
 			<table>
 				<tr>

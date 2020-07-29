@@ -8,7 +8,7 @@ require 'header.php';
 
 <html>
 <center>
-	<h2>IMPORT STAFF RECORDS <br>
+	<h2 style="color: <?php echo $keenam; ?>">IMPORT STAFF RECORDS <br>
 	---CSV FILE IMPORT---</h2>
 	<body>
 		<form action="import_process.php" method="post" name="upload_excel" enctype="multipart/form-data">
