@@ -1,11 +1,9 @@
 <?php
 //CONNECT TO DATABASE
 require 'config.php';
-
 //CONNECT TO HEADER FILE
 require 'header.php';
 ?>
-
 <html>
 <body>
 	<center>
