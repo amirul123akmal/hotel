@@ -6,6 +6,11 @@ require 'config.php';
 require 'header.php';
 ?>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 <html>
 <body>
 	<center>
