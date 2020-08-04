@@ -15,3 +15,9 @@ $address = "Lot 88, Taman Infra, <br> 72000 Kuala Pilah, Perak.";
 $moto = "Lexury Hotel Room";
 $logo = "gambar/wwblogo.jpg";
 ?>
+<style type="text/css">
+	a{color: green;}
+	a:hover{color: red;}
+	.link{color: blue;}
+	.link:hover{color: red;}
+</style>
