@@ -7,6 +7,7 @@
 <head>
 	<title> <?php echo $sysname;?> </title>
 </head>
+<script type="text/javascript" src="font.js"></script>
 <style type="text/css">
 	a{color: green;}
 	a:hover{color: red;}
@@ -32,10 +33,8 @@
 </body>
 <center>	
 	<form method="POST" >
-		<input type="submit" value = "+ Text" name="plus">
-		<input type="submit" value ="- Text" name="minus"><br>
-		<input type="submit" name="change" id="change" value="Change Color">
-		<input type="submit" name="reset" id="reset" value="Reset Color">
+		<button onclick="change_color()">Change Color</button>
+		<button onclick="default_color()">Default Color</button>
 	</form>
 </center>
 </html>

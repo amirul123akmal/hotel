@@ -4,6 +4,8 @@ function change_size( ){
   demo1 = document.getElementById('menu1');
   demo2 = document.getElementById('menu2');
   demo3 = document.getElementById('menu3');
+  demo4 = document.getElementById('menu4');
+  header = document.getElementById('header');
   if (!font_large) {
     demo.style.fontSize = "25" ;
     demo1.style.fontSize = "20" ;
@@ -28,4 +30,8 @@ function random_rgba() {
 function change_color(){
 	
 	document.getElementById("menu").style.color = random_rgba();
+}
+
+function default_color(){
+  
 }
