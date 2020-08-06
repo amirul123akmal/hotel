@@ -33,20 +33,26 @@ if (isset($_POST['idstaff'])){
 ?>
 <html>
 <body>
+	<script type="text/javascript" src='font.js'> </script>
+	
 <center>
 	<table width='70%' border=0>
 		<tr style="color: <?php echo $keenam; ?>">
-			<td width="400"><FONT SIZE="<?php echo $plus.$size4; ?>"><U>STAFF LOGIN ONLY</U></td>
+			<td width="400" id="menu"><U>STAFF LOGIN ONLY</U></td>
 		</tr>
 		<td>
 			<form method="POST">
-				<p style="color: <?php echo $keenam; ?>;">STAFF LOGIN</p>
-				<label style="color: <?php echo $keempat; ?>;" >ID STAFF</label><br>
+				<p id="menu1" style="color: <?php echo $keenam; ?>;">STAFF LOGIN</p>
+				<label id="menu2" style="color: <?php echo $keempat; ?>;" >ID STAFF</label><br>
 				<input type="text" name="idstaff"placeholder="Id Staff" required ><br>
-				<label style="color: <?php echo $keempat; ?>" >Password</label><br>
+				<label id="menu3" style="color: <?php echo $keempat; ?>" >Password</label><br>
 				<input type="password" name="pass" placeholder="Password" required><br><br>	
 				<button type="submit">Login</button><br>
+				<script>change_size();</script>
 			</form>
+			<script src="font.js"></script><br><br>
+				<button onclick="change_size()">Change size</button>
+				<button onclick="change_color()">Change color</button>
 		</td>
 		<td width="400"><font size='6' face="Georgia, Arial" color="maroon">
 			"Discover a hotel that defines a new dimension of luxury"

@@ -1,29 +1,31 @@
 var font_large = false ;
-function click_and_change( ){
-  demo_paragraph = document.getElementById('menu');
-  demo_paragraph1 = document.getElementById('menu1');
-  demo_paragraph2 = document.getElementById('menu2');
-  demo_paragraph3 = document.getElementById('menu3');
+function change_size( ){
+  demo = document.getElementById('menu');
+  demo1 = document.getElementById('menu1');
+  demo2 = document.getElementById('menu2');
+  demo3 = document.getElementById('menu3');
   if (!font_large) {
-    demo_paragraph.style.fontSize = "20" ;
-    demo_paragraph1.style.fontSize = "15" ;
-    demo_paragraph2.style.fontSize = "10" ;
-    demo_paragraph3.style.fontSize = "10" ;
+    demo.style.fontSize = "25" ;
+    demo1.style.fontSize = "20" ;
+    demo2.style.fontSize = "16" ;
+    demo3.style.fontSize = "16" ;
     font_large = true ;
   }
   else {
-    demo_paragraph.style.fontSize = "40" ;
-    demo_paragraph1.style.fontSize = "35" ;
-    demo_paragraph2.style.fontSize = "15" ;
-    demo_paragraph3.style.fontSize = "15" ;
+    demo.style.fontSize = "40" ;
+    demo1.style.fontSize = "35" ;
+    demo2.style.fontSize = "15" ;
+    demo3.style.fontSize = "15" ;
     font_large = false ;
   }
 }
 
-function change_color(){
-	function random_rgba() {
+function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 	}
+
+function change_color(){
+	
 	document.getElementById("menu").style.color = random_rgba();
 }
