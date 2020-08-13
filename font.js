@@ -29,7 +29,7 @@ function random_rgba() {
 
 function change_color(){
 	
-	document.getElementById("menu").style.color = random_rgba();
+	document.getElementById("menu").style.color = "blue";
 }
 
 function default_color(){
