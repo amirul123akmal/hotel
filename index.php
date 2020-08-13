@@ -31,11 +31,10 @@ if (isset($_POST['idstaff'])){
 }
 ?>
 <html>
-<script>change_size()</script>
 <body>	
 <center>
 	<table width='70%' border=0>
-		<tr>
+		<tr style="color: <?php echo $keenam; ?>">
 			<td width="400" id="menu"><U>STAFF LOGIN ONLY</U></td>
 		</tr>
 		<td>
@@ -46,7 +45,7 @@ if (isset($_POST['idstaff'])){
 				<label id="menu3" >Password</label><br>
 				<input type="password" name="pass" placeholder="Password" required><br><br>	
 				<button type="submit">Login</button><br>
-				
+				<script>change_size();</script>
 			</form>
 		</td>
 		<td width="400"><font size='6' face="Georgia, Arial" color="maroon">
