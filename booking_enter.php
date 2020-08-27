@@ -27,7 +27,7 @@ $bayar = $getCat['price'];
 $mustPay = $totalday*$bayar;
 
 //CHECK AVAILABLE ROOM
-$wujud = mysqli_query($samb,"SELECT * FROM booking WHERE idroom='$room' AND (check_in <= '$In' AND check_out > '$In') OR (check_in < '$Out' AND check_out > '$Out') OR (check_in >= '$In' AND check_out < '$Out')");
+$wujud = mysqli_query($samb,"SELECT * FROM booking WHERE idroom='$room' AND ((check_in <= '$In' AND check_out > '$In') OR (check_in < '$Out' AND check_out > '$Out') OR (check_in >= '$In' AND check_out < '$Out'))");
 $bil_rekod = mysqli_num_rows($wujud);
 if ($bil_rekod == 0&&$In !=$Out) {
 	//ENTER BOOKING INTO TABLE

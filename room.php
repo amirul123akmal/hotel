@@ -10,7 +10,7 @@ require('header.php');
 </style>
 <center>
 	<h2 style="color: <?php echo $keenam; ?>"> LIST OF ROOM</h2><br>
-	<table width="811" border="1" align="center">
+	<table width="811" border="1">
 		<tr align="center">
 			<td width="40"><b>NUM.</b></td>
 			<td width="150"><b>ROOM NUMBER</b></td>
@@ -27,7 +27,7 @@ require('header.php');
 			$infoCat = mysqli_fetch_array($dataCat);
 			$data_wait = mysqli_query($samb,"SELECT * FROM room WHERE ");
 		?>
-		<tr>
+		<tr  align="center">
 			<td> <?php echo $no; ?></td>
 			<td> <?php echo $info1['nomroom']; ?></td>
 			<td> <?php echo $infoCat['category']; ?></td>
