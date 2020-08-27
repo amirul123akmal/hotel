@@ -33,8 +33,8 @@
 </body>
 <center>	
 	<form method="POST" >
-		<button onclick="change_color()">Change Color</button>
-		<button onclick="default_color()">Default Color</button>
+		<input type="submit" name="change" id="change" value="Change Color">
+		<input type="submit" name="reset" id="reset" value="Reset Color">
 	</form>
 </center>
 </html>
