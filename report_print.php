@@ -8,7 +8,7 @@ require 'config.php';
 	<title>MONTHLY REPORT</title>
 </head>
 <body>
-	<table width="711" border="0">
+	<table width="711" border="0" align="center">
 		<td><p><strong>MONTHLY REPORT</strong></p>
 			<table width="1000" border="1" align="center">
 				<tr>
