@@ -8,14 +8,12 @@ $Nreceipt=$_GET['id'];
 //GET THE RELATED RECORD
 $Booking = mysqli_query($samb,"SELECT * FROM booking WHERE idbook='$Nreceipt'");
 $getBooking=mysqli_fetch_array($Booking);
-$Room = mysqli_query($samb,"SELECT * FROM room WHERE idroom = 'getBooking[idroom]'");
+$Room = mysqli_query($samb,"SELECT * FROM room WHERE idroom = '$getBooking[idroom]'");
 $getRoom = mysqli_fetch_array($Room);
 $Cat = mysqli_query($samb,"SELECT * FROM  categories WHERE idcat='$getRoom[idcat]'");
 $getCat = mysqli_fetch_array($Cat);
 $Guest = mysqli_query($samb,"SELECT * FROM  guest WHERE icguest='$getBooking[icguest]'");
 $getGuest = mysqli_fetch_array($Guest);
-$Address = mysqli_query($samb,"SELECT * FROM  address WHERE icguest='$getGuest[icguest]'");
-$getAdd = mysqli_fetch_array($Address);
 
 //REARRANGE DATE FORMAT
 $In = date("d-m-y", strtotime($getBooking['check_in']));
@@ -68,11 +66,7 @@ $Out = date('d-m-y',strtotime($getBooking['check_out']));
 		</tr>
 		<tr>
 			<td width="300">GUEST NAME</td>
-			<td width="400"><?php echo $getAdd['address1'];?><br>
-			<?php echo $getAdd['address2'];?><br>
-			<?php echo $getAdd['postcode'];?><br>
-			<?php echo $getAdd['town'];?><br>
-			<?php echo $getAdd['states']?><br>
+			<td width="400"><?php echo $getGuest['name']; ?>
 			</td>
 		</tr>
 		<tr>

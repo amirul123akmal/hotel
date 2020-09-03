@@ -55,18 +55,19 @@ require 'config.php';
 				}
 				elseif ($numroom=="-" && $month != "-"  && $year == "-") {
 					#echo "<script>alert('5');</script>";
-					$data1 = mysqli_query($samb,"SELECT * FROM  booking WHERE MONTH(check_in) = '$year' OR YEAR(check_out) = '$year' ORDER BY idroom,check_in");
+					$data1 = mysqli_query($samb,"SELECT * FROM  booking WHERE MONTH(check_in) = '$month' OR MONTH(check_out) = '$month' ORDER BY idroom,check_in");
 				}
 				elseif ($numroom!="-" && $month == "-"  && $year != "-") {
 					#echo "<script>alert('6');</script>";
 					$data1 = mysqli_query($samb,"SELECT * FROM  booking WHERE YEAR(check_in) = '$year' OR YEAR(check_out)='$year' ORDER BY idroom,check_in");
 				}
-				elseif ($numroom!="-" && $month != "-"  && $year != "-") {
-					#echo "<script>alert('7');</script>";
-					$data1 = mysqli_query($samb,"SELECT * FROM  booking WHERE idroom = '$numroom' AND YEAR(check_in)='$year' OR YEAR(check_out)='$year' ORDER BY idroom,check_in");
+				elseif ($numroom=="-" && $month == "-"  && $year != "-") {
+					#echo "<script>alert('5');</script>";
+					$data1 = mysqli_query($samb,"SELECT * FROM  booking WHERE YEAR(check_in) = '$year' OR YEAR(check_out) = '$year' ORDER BY idroom,check_in");
 				}
 				else{
-					echo "<script>alert('Error');</script>";
+					echo "<script>alert('Error');window.location='report.php';</script>";
+
 				}
 				$totalAmount = 0;
 				$total_rec = mysqli_num_rows($data1);
