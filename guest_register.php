@@ -14,12 +14,12 @@ if (isset($_POST['guestname'])) {
 	//ADD NEW RECORD TO TABLE
 	$result = mysqli_query($samb , "INSERT INTO guest(icguest, name , hpnum) VALUES('$icguest','$name','$hpnum')");
 	//DISPLAY MSG
-	echo "<script>alert('NEW RECORD ADDED'); 
-	window.location='guest.php'</script>";
+	echo "<script>alert('NEW RECORD ADDED'); window.location='guest.php'</script>";
 }
 ?>
-
+<!-- Start the Website with HTML -->
 <html>
+<!-- centerize all the content in the body -->
 <center>
 	<body>
 		<h2>
@@ -28,12 +28,14 @@ if (isset($_POST['guestname'])) {
 		<form name="form1" action="guest_register.php" method="POST">
 			<table width="700" border="1" align="center">
 				<tr>
+				<!-- Nama Pelanggan -->
 					<td width="200">GUEST NAME</td>
 					<td width="300"><input type="text" name="guestname" size="60" id="guestname" placeholder="RAZMI BIN RAZMAN" required autofocus /></td>
 				</tr>
 				<tr>
+				<!-- IC pelanggan -->
 					<td width="200">GUEST IC</td>
-					<td width="300"><input type="text" name="guestic" size="30" id="guestic" placeholder="man88" required /></td>
+					<td width="300"><input type="text" name="guestic" size="30" id="guestic" placeholder="man88" required minlength="12" maxlength="12" size="13" />12 number without Dash</td>
 				</tr>
 				<tr>
 					<td width="200">GUEST HP. NUMBER</td>

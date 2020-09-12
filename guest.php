@@ -28,8 +28,7 @@ require('header.php');
 				<td> <?php echo $info1['icguest']; ?> </td>
 				<td> <?php echo $info1['name']; ?> </td>
 				<td> <?php echo $info1['hpnum']; ?> </td>
-				<td><a href="guest_update.php?icguest=
-					<?php echo $info1['icguest']; ?>">UPDATE</a></td>
+				<td><a href="guest_update.php?icguest=<?php echo $info1['icguest']; ?>">UPDATE</a></td>
 				<td>
 					<a href="guest_delete.php?icguest= <?php echo $info1['icguest']; ?>">DELETE</a>
 				</td>
