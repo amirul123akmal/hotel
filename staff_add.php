@@ -33,11 +33,11 @@ if (isset($_POST['submit'])) {
 				</tr>
 				<tr>
 					<td width="200">USER NAME</td>
-					<td width="300"><input type="text" name="staffid" size="30" id="staffid" placeholder="Username" required /></td>
+					<td width="300"><input type="text" name="staffid" size="30" id="staffid" placeholder="Username" required/></td>
 				</tr>
 				<tr>
 					<td width="200">PASSWORD</td>
-					<td width="300"><input type="text" name="pass" id="pass" placeholder="Password" required /></td>
+					<td width="300"><input type="text" name="pass" id="pass" placeholder="Password" required minlength="8" /></td>
 				</tr>
 			</table>
 			<input type="submit" name="submit" id="submit" value="ADD NEW STAFF" />
